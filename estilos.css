@@ -124,6 +124,20 @@ body {
   text-transform: uppercase;
 }
 
+/* Mensaje cuando la cuenta llega a cero */
+.cuenta--fin {
+  display: block;
+  border: 3px solid var(--rojo);
+  border-radius: 8px;
+  padding: 12px 8px 6px;
+  font-family: var(--fuente-titulos);
+  color: var(--amarillo);
+  font-size: clamp(2.2rem, 11vw, 3.4rem);
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 var(--rojo);
+}
+
 /* ===== Horario ===== */
 .horario {
   font-size: clamp(1.05rem, 4.4vw, 1.25rem);
