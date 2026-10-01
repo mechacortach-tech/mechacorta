@@ -1,0 +1,140 @@
+/* ===== Colores de la marca (ajustados al logo) ===== */
+:root {
+  --negro: #141414;
+  --crema: #F3EEDF;
+  --amarillo: #F5B92E;
+  --rojo: #D62828;
+
+  --fuente-titulos: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  --fuente-texto: "Archivo", system-ui, sans-serif;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--negro);
+  color: var(--crema);
+  font-family: var(--fuente-texto);
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+/* Una sola columna centrada, pensada primero para celular */
+.pagina {
+  max-width: 560px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 32px 16px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+/* ===== Logo tipo sticker ===== */
+/* El círculo crema recorta el margen blanco de la imagen.
+   isolation: isolate hace que el "multiply" solo se mezcle con este círculo. */
+.logo {
+  position: relative;
+  width: clamp(170px, 52vw, 240px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--crema);
+  border: 6px solid var(--rojo);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* La imagen se agranda al doble y se centra en la bomba.
+   multiply: el blanco se vuelve crema y el negro queda negro. */
+.logo img {
+  position: absolute;
+  width: 200%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -47.4%);
+  mix-blend-mode: multiply;
+}
+
+/* ===== Textos ===== */
+.titulo {
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+  color: var(--amarillo);
+  text-transform: uppercase;
+  font-size: clamp(3rem, 15vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  /* Sombra roja desplazada: efecto retro de afiche */
+  text-shadow: 3px 3px 0 var(--rojo);
+}
+
+.gancho {
+  font-size: clamp(1.1rem, 4.6vw, 1.35rem);
+  max-width: 26ch;
+}
+
+.fecha {
+  font-family: var(--fuente-titulos);
+  color: var(--amarillo);
+  font-size: clamp(1.8rem, 8vw, 2.4rem);
+  letter-spacing: 0.04em;
+  border-top: 3px solid var(--rojo);
+  border-bottom: 3px solid var(--rojo);
+  padding: 4px 16px 0;
+}
+
+/* ===== Cuenta regresiva: 4 cajitas en una fila ===== */
+.cuenta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.cuenta__caja {
+  border: 3px solid var(--rojo);
+  border-radius: 8px;
+  padding: 8px 2px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuenta__numero {
+  font-family: var(--fuente-titulos);
+  color: var(--crema);
+  font-size: clamp(2.2rem, 11vw, 3.4rem);
+  line-height: 1;
+  /* Todos los números del mismo ancho, para que no "salten" al cambiar */
+  font-variant-numeric: tabular-nums;
+}
+
+.cuenta__etiqueta {
+  font-family: var(--fuente-titulos);
+  color: var(--amarillo);
+  font-size: clamp(0.95rem, 4vw, 1.15rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ===== Horario ===== */
+.horario {
+  font-size: clamp(1.05rem, 4.4vw, 1.25rem);
+}
+
+.horario strong {
+  display: block;
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+  color: var(--amarillo);
+  font-size: clamp(2rem, 9vw, 2.8rem);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}

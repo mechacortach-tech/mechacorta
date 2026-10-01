@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <!-- Hace que el celular muestre la página a su tamaño real, sin achicarla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecha Corta — Próximamente</title>
+  <meta name="description" content="Carne mechada a fuego lento. Sándwiches que revientan de sabor. Lanzamiento viernes 16 de octubre.">
+  <meta name="theme-color" content="#141414">
+
+  <!-- Tipografías desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="pagina">
+
+    <!-- Logo dentro de un círculo crema, tipo sticker -->
+    <div class="logo">
+      <img src="imagenes/logo-mecha-corta.png" alt="Logo Mecha Corta">
+    </div>
+
+    <h1 class="titulo">Se viene la explosión</h1>
+
+    <p class="gancho">Carne mechada a fuego lento. Sándwiches que revientan de sabor.</p>
+
+    <p class="fecha">Viernes 16 de octubre</p>
+
+    <!-- Cuenta regresiva: por ahora quieta, el JavaScript la moverá en el paso 2 -->
+    <div class="cuenta" id="cuenta">
+      <div class="cuenta__caja">
+        <span class="cuenta__numero" id="dias">--</span>
+        <span class="cuenta__etiqueta">Días</span>
+      </div>
+      <div class="cuenta__caja">
+        <span class="cuenta__numero" id="horas">--</span>
+        <span class="cuenta__etiqueta">Horas</span>
+      </div>
+      <div class="cuenta__caja">
+        <span class="cuenta__numero" id="minutos">--</span>
+        <span class="cuenta__etiqueta">Minutos</span>
+      </div>
+      <div class="cuenta__caja">
+        <span class="cuenta__numero" id="segundos">--</span>
+        <span class="cuenta__etiqueta">Segundos</span>
+      </div>
+    </div>
+
+    <p class="horario">
+      Todas las noches<br>
+      <strong>20:00 a 02:00</strong>
+    </p>
+
+  </main>
+</body>
+</html>
