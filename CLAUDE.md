@@ -11,6 +11,9 @@
 ## Este proyecto
 - Qué es: mecha-lab, proyecto de práctica para aprender Claude Code.
 - Primera tarea: página "Mecha Corta — Próximamente".
+- Ahora tiene dos páginas independientes (sin links entre ellas), que comparten estilos.css:
+  - index.html: "Próximamente" con cuenta regresiva (cuenta-regresiva.js).
+  - abierto.html: horario, menú con precios, sectores de reparto y botón "Pedir por WhatsApp". Se manda por chat a quien pregunta si estamos vendiendo.
 - Tecnología: HTML, CSS y JavaScript simples, sin frameworks.
 
 ## Reglas de trabajo

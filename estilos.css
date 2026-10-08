@@ -152,3 +152,123 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.1;
 }
+
+/* ===== Página Abierto (abierto.html) ===== */
+/* Todas estas clases son nuevas: index.html no las usa, así que allá no cambia nada */
+
+.seccion__titulo {
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+  color: var(--amarillo);
+  text-transform: uppercase;
+  font-size: clamp(2.2rem, 10vw, 3rem);
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-shadow: 2px 2px 0 var(--rojo);
+}
+
+/* --- Menú --- */
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu__aviso {
+  font-weight: 600;
+  margin-top: -6px;
+}
+
+/* Tarjeta: nombre a la izquierda, precio a la derecha, ingredientes abajo */
+.menu__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: 4px 12px;
+  border: 3px solid var(--rojo);
+  border-radius: 8px;
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.menu__nombre {
+  font-family: var(--fuente-titulos);
+  font-weight: 400;
+  color: var(--crema);
+  font-size: clamp(1.7rem, 7.5vw, 2.1rem);
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.menu__precio {
+  font-family: var(--fuente-titulos);
+  color: var(--amarillo);
+  font-size: clamp(2rem, 9vw, 2.6rem);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ocupa las dos columnas, debajo del nombre y el precio */
+.menu__detalle {
+  grid-column: 1 / -1;
+  font-size: 0.98rem;
+  opacity: 0.9;
+}
+
+/* --- Entrega --- */
+.entrega {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Lista sin viñetas; cada sector es una "píldora" que salta de línea sola */
+.entrega__sectores {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.entrega__sectores li {
+  border: 2px solid var(--amarillo);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.entrega__nota {
+  max-width: 34ch;
+}
+
+/* --- Botón de WhatsApp: grande y fácil de tocar con el dedo --- */
+.boton-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 60px;
+  padding: 10px 16px 6px;
+  background: var(--amarillo);
+  color: var(--negro);
+  font-family: var(--fuente-titulos);
+  font-size: clamp(1.9rem, 8.5vw, 2.4rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10px;
+  /* Sombra roja sólida: mismo efecto retro de afiche que el título */
+  box-shadow: 4px 4px 0 var(--rojo);
+}
+
+/* Al tocarlo, se "hunde" sobre su sombra */
+.boton-whatsapp:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--rojo);
+}

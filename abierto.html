@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <!-- Hace que el celular muestre la página a su tamaño real, sin achicarla -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecha Corta — Abierto</title>
+  <meta name="description" content="Abierto viernes y sábado, 20:00 a 02:00. Sándwiches de carne mechada con bebida en lata. Reparto en Peñuelas y alrededores.">
+  <meta name="theme-color" content="#141414">
+
+  <!-- Tipografías desde Google Fonts (las mismas de index.html) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <main class="pagina">
+
+    <!-- Logo dentro de un círculo crema, tipo sticker -->
+    <div class="logo">
+      <img src="imagenes/logo-mecha-corta.png" alt="Logo Mecha Corta">
+    </div>
+
+    <p class="horario">
+      Abierto viernes y sábado<br>
+      <strong>20:00 a 02:00</strong>
+    </p>
+
+    <!-- Menú: nombre y precio arriba, ingredientes abajo -->
+    <section class="menu">
+      <h2 class="seccion__titulo">Menú</h2>
+      <p class="menu__aviso">Todos incluyen bebida en lata</p>
+
+      <article class="menu__item">
+        <h3 class="menu__nombre">Mecha Pura</h3>
+        <p class="menu__precio">$4.000</p>
+        <p class="menu__detalle">Pan de papa, mechada y mayo Kraft</p>
+      </article>
+
+      <article class="menu__item">
+        <h3 class="menu__nombre">Mecha Pickle</h3>
+        <p class="menu__precio">$5.500</p>
+        <p class="menu__detalle">Pan de papa, mechada, queso cheddar, pepinillos y mayo Kraft</p>
+      </article>
+
+      <article class="menu__item">
+        <h3 class="menu__nombre">Mecha Bacon</h3>
+        <p class="menu__precio">$5.500</p>
+        <p class="menu__detalle">Pan de papa, mechada, queso cheddar, tocino y mayo Kraft</p>
+      </article>
+    </section>
+
+    <!-- Sectores de reparto como "chips" -->
+    <section class="entrega">
+      <h2 class="seccion__titulo">Reparto a domicilio</h2>
+      <ul class="entrega__sectores">
+        <li>Peñuelas</li>
+        <li>Av. del Mar</li>
+        <li>La Cantera</li>
+        <li>Sector Enjoy</li>
+        <li>Cuatro Esquinas</li>
+        <li>Balmaceda</li>
+      </ul>
+      <p class="entrega__nota">
+        Reparto gratis en sectores cercanos. Más lejos, desde $1.500 según distancia: te confirmamos al pedir.
+      </p>
+    </section>
+
+    <!-- wa.me es el link oficial de WhatsApp. El texto va codificado: %20 = espacio, %21 = ! -->
+    <a class="boton-whatsapp" href="https://wa.me/56958847733?text=Hola%21%20Quiero%20pedir%20una%20Mecha">
+      Pedir por WhatsApp
+    </a>
+
+  </main>
+</body>
+</html>
