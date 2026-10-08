@@ -3,8 +3,11 @@
 ## El negocio
 - Dark kitchen de sándwiches de carne mechada premium en Peñuelas, Coquimbo (Chile).
 - Venta nocturna, 20:00 a 02:00. Canales: pasajeros de inDrive, Instagram @mechacorta_ls, WhatsApp, universidades.
-- Menú: Mecha Maestra, La Italiana Explosiva, La Fundida de Papa, Mecha Pura.
-  Dips: Pólvora, Dinamita, Crocante. Edición Ruta (Bacon y Pickle) a $5.500 con lata.
+- Menú actual (venta por inDrive y reparto, viernes y sábado 20:00 a 02:00):
+  Mecha Pura $4.000, Mecha Pickle $5.500 y Mecha Bacon $5.500, todos con bebida en lata.
+- Menú futuro (cuando tenga cocina con resolución sanitaria):
+  Mecha Maestra, La Italiana Explosiva, La Fundida de Papa y Mecha Pura.
+  Dips: Pólvora, Dinamita, Crocante.
 - Fidelización: Explosion Game, 8 sellos (sello 4 sorpresa, sello 8 doble explosivo).
 - Identidad: amarillo, negro, rojo y crema. Logo: bomba. Tono retro-urbano y cercano.
 
